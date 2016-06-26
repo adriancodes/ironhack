@@ -1,0 +1,108 @@
+#+begin_src
+# Print Hello Ironhack
+
+# Clojure & Clojurescript
+(println "Hello Ironhack")
+
+# Ruby
+p "Hello World"
+
+# Javascript
+console.log("Hello World")
+#+end_src
+
+#+begin_src
+# Type Check
+
+# Clojure & Clojurescript
+(type "Hello Ironhack")
+
+# Ruby
+"Hello World".class
+
+# Javascript
+typeof("Hello World")
+#+end_src
+
+#+begin_src
+# Infix vs Prefix
+
+# Clojure & Clojurescript
+(+ 1 2 3 4 5 6)
+
+# Ruby
+1 + 2 + 3 + 4 + 5 + 6
+
+# Javascript
+1 + 2 + 3 + 4 + 5 + 6
+#+end_src
+
+#+begin_src
+# Inside Out
+
+# Clojure & Clojurescript
+(+ 2 (* 4 (/ 20 2)))
+
+# Ruby
+(2 + (4 * (20 / 2)))
+
+# Javascript
+(2 + (4 * (20 / 2)))
+#+end_src
+
+#+begin_src
+# Immutability
+
+# Clojure & Clojurescript
+(def a "Ironhack")
+(str a " is Awesome")
+
+# Ruby
+a = Ironhack
+
+a += " is Awesome!"
+
+# Javascript
+var a = "Ironhack";
+a += " is Awesome!";
+#+end_src
+
+#+begin_src
+# Immutability
+
+# Clojure & Clojurescript
+(def col [1 2 3])
+(concat col [4 5 6])
+
+# Ruby
+col = [1, 2, 3]
+col += [4, 5, 6]
+
+# Javascript
+var col = [1, 2, 3]
+col += [4, 5, 6]
+#+end_src
+
+#+begin_src
+# FP in Other Languages
+
+# Clojure & Clojurescript
+(def col [1 2 3 4 5])
+(map (fn [n] (* 3 n)) col)
+(map #(* % 3) col)
+(filter odd? (map #(* % 3) coll))
+(reduce + (filter odd? (map #(* % 3) coll)))
+(->> coll (map #(* % 3)) (filter odd?) (reduce +))
+
+# Ruby
+coll = [1, 2, 3, 4, 5]
+coll.map {|n| n * 3}
+coll.map {|n| n x 3}.filter(&:odd?)
+coll.map {|n| n x 3}.filter(&:odd?).reduce(&:+)
+
+# Javascript
+var coll = [1, 2, 3, 4, 5]
+coll.map(function(n) {return n * 3})
+coll.map(function(n) {return n * 3}).filter(function(n){return n % 2})
+coll.map(function(n) {return n * 3}).filter(function(n){return n % 2}).reduce(function(a, b){return a + b})
+#+end_src

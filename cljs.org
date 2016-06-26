@@ -1,0 +1,68 @@
+#+OPTIONS: toc:nil num:nil
+#+REVEAL_ROOT: http://cdn.jsdelivr.net/reveal.js/3.0.0/
+#+REVEAL_THEME: blood
+#+REVEAL_TRANS: concave
+#+REVEAL_PLUGINS: (highlight)
+#+REVEAL_EXTRA_CSS: http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css
+
+* Intro to Clojure
+What Is Clojure? 
+
+In the simplest terms Clojure is a Lisp for the JVM.
+
+Clojure is a dynamic functional programming language created by Rich
+Hickey that features a rich set of immutable, persistent data
+structures. Clojure is also a dialect of Lisp and shares the same
+code-as-data approach and macro system. And finally, Clojure is built
+on top of Java and compiles down to Jave bytecode so anywhere you can
+run Java you can run a Clojure application. 
+
+
+* Why Clojure?
+
+  * Immutability
+  * Rich data structures
+  * Functional
+    - High order functions, first class functions, pure functions vs instructions
+  * Simplicity
+    - Limited syntax, loosely typed, handles incidental complexity for
+      you like thread-safety
+  * Expressive
+    - You can perform complex data manipulations and actions succsintly
+  * Practical
+    - Baked-in Java interop allows interactive with all of the Java ecosystem
+
+* Functional vs Imperative (OOP)
+
+  * Computationally Equivalent
+    - Both are capable of expressing any computational task
+  * OOP executes complex tasks that sequentially modify application
+    state to it's desired result
+  * Functional programming achieves the same goal through nested function
+    composition. 
+  * OOP uses objects as data, mutable variables, methods on objects,
+    patterns, inheritance, abstraction, and polymorphism to model the
+    world.
+  * Functional progamming uses data structures and nested functions.
+ 
+* Functions
+An operation that takes a number of parameters (arguments) and returns a result.
+
+#+begin_src clojure
+;; Clojure function invocation
+()
+
+;; Example sytnax for all Clojure operations
+(operator operand-1 operand-2 ... operand-N)
+
+;; In other words
+(function-name argument1 argument2 argument3 ...)
+#+end_src
+
+* Quick Demo
+
+  * Hello World
+  * Simple Math Example
+  * Immutability
+  * Working with Collections
+  * Examples of FP in Ruby and Javascript

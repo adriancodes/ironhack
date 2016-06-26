@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Adrian Martin)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/blood.css" id="theme"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css"/>
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1></h1>
+<h2>Adrian Martin</h2>
+<h2><a href="mailto:adrian@pointslope">adrian@pointslope</a></h2>
+<h2></h2>
+</section>
+
+<section>
+<section id="slide-orgheadline1">
+<h2 id="orgheadline1">Intro to Clojure</h2>
+<p>
+What Is Clojure? 
+</p>
+
+<p>
+In the simplest terms Clojure is a Lisp for the JVM.
+</p>
+
+<p>
+Clojure is a dynamic functional programming language created by Rich
+Hickey that features a rich set of immutable, persistent data
+structures. Clojure is also a dialect of Lisp and shares the same
+code-as-data approach and macro system. And finally, Clojure is built
+on top of Java and compiles down to Jave bytecode so anywhere you can
+run Java you can run a Clojure application. 
+</p>
+
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline2">
+<h2 id="orgheadline2">Why Clojure?</h2>
+<ul>
+<li>Immutability</li>
+<li>Rich data structures</li>
+<li>Functional
+<ul>
+<li>High order functions, first class functions, pure functions vs instructions</li>
+
+</ul></li>
+<li>Simplicity
+<ul>
+<li>Limited syntax, loosely typed, handles incidental complexity for
+you like thread-safety</li>
+
+</ul></li>
+<li>Expressive
+<ul>
+<li>You can perform complex data manipulations and actions succsintly</li>
+
+</ul></li>
+<li>Practical
+<ul>
+<li>Baked-in Java interop allows interactive with all of the Java ecosystem</li>
+
+</ul></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline3">
+<h2 id="orgheadline3">Functional vs Imperative (OOP)</h2>
+<ul>
+<li>Computationally Equivalent
+<ul>
+<li>Both are capable of expressing any computational task</li>
+
+</ul></li>
+<li>OOP executes complex tasks that sequentially modify application
+state to it's desired result</li>
+<li>Functional programming achieves the same goal through nested function
+composition.</li>
+<li>OOP uses objects as data, mutable variables, methods on objects,
+patterns, inheritance, abstraction, and polymorphism to model the
+world.</li>
+<li>Functional progamming uses data structures and nested functions.</li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline4">
+<h2 id="orgheadline4">Functions</h2>
+<p>
+An operation that takes a number of parameters (arguments) and returns a result.
+</p>
+
+<div class="org-src-container">
+
+<pre><code class="clojure">;; Clojure function invocation
+()
+
+;; Example sytnax for all Clojure operations
+(operator operand-1 operand-2 ... operand-N)
+
+;; In other words
+(function-name argument1 argument2 argument3 ...)
+</code></pre>
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-orgheadline5">
+<h2 id="orgheadline5">Quick Demo</h2>
+<ul>
+<li>Hello World</li>
+<li>Simple Math Example</li>
+<li>Immutability</li>
+<li>Working with Collections</li>
+<li>Examples of FP in Ruby and Javascript</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }]
+});
+</script>
+</body>
+</html>
