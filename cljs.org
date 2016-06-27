@@ -6,7 +6,7 @@
 #+REVEAL_EXTRA_CSS: http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css
 
 * Intro to Clojure
-* What Is Clojure? 
+** What Is Clojure? 
 
   * Create by Rich Hickey
   * Dynamic functional language
@@ -14,7 +14,7 @@
   * JVM
   * Concurrent and Multithreaded
 
-* Why Clojure?
+** Why Clojure?
 
   * Immutability
   * Rich data structures
@@ -23,7 +23,7 @@
   * Expressive
   * Practical
 
-* Functional vs Imperative (OOP)
+** Functional vs Imperative (OOP)
 
   * Computationally Equivalent
   * OOP executes complex tasks that modify application state
@@ -34,7 +34,7 @@
     world.
   * Functional progamming uses data structures and nested functions.
  
-* Functions
+** Functions
 An operation that takes a number of parameters (arguments) and returns a result.
 
 #+begin_src clojure
@@ -48,7 +48,7 @@ An operation that takes a number of parameters (arguments) and returns a result.
 (function-name argument1 argument2 argument3 ...)
 #+end_src
 
-* Quick Demo
+** Quick Demo
 
   * Hello World
   * Simple Math Example

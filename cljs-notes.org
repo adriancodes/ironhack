@@ -6,7 +6,7 @@
 #+REVEAL_EXTRA_CSS: http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/css/zenburn.css
 
 * Intro to Clojure
-* What Is Clojure? 
+** What Is Clojure? 
 
   In the simplest terms Clojure is a Lisp for the JVM.
 
@@ -16,14 +16,20 @@
   code-as-data approach and macro system. And finally, Clojure is built
   on top of Java and compiles down to Jave bytecode so anywhere you can
   run Java you can run a Clojure application. 
-
-
-* Why Clojure?
+  
+** Why Clojure?
 
   * Immutability
   * Rich data structures
+    - "It is better to have 100 functions operate on one data
+      structure than to have 10 functions operate on 10 data
+      structures." - Alan J. Perlis
   * Functional
-    - High order functions, first class functions, pure functions vs instructions
+    - High order functions, first class functions, pure functions vs
+      instructions
+    - First class functions are functions that are treated like an
+      object (or are assignable to a variable).
+    - Higher order functions are functions that take at least one first class function as a parameter.
   * Simplicity
     - Limited syntax, loosely typed, handles incidental complexity for
       you like thread-safety
@@ -32,7 +38,7 @@
   * Practical
     - Baked-in Java interop allows interactive with all of the Java ecosystem
 
-* Functional vs Imperative (OOP)
+** Functional vs Imperative (OOP)
 
   * Computationally Equivalent
     - Both are capable of expressing any computational task
@@ -45,7 +51,7 @@
     world.
   * Functional progamming uses data structures and nested functions.
  
-* Functions
+** Functions
 An operation that takes a number of parameters (arguments) and returns a result.
 
 #+begin_src clojure
@@ -59,7 +65,7 @@ An operation that takes a number of parameters (arguments) and returns a result.
 (function-name argument1 argument2 argument3 ...)
 #+end_src
 
-* Quick Demo
+** Quick Demo
 
   * Hello World
   * Simple Math Example
