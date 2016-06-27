@@ -8,25 +8,36 @@
 * Intro to Clojure
 * What Is Clojure? 
 
-  * Create by Rich Hickey
-  * Dynamic functional language
-  * Dialect of Lisp
-  * JVM
-  * Concurrent and Multithreaded
+  In the simplest terms Clojure is a Lisp for the JVM.
+
+  Clojure is a dynamic functional programming language created by Rich
+  Hickey that features a rich set of immutable, persistent data
+  structures. Clojure is also a dialect of Lisp and shares the same
+  code-as-data approach and macro system. And finally, Clojure is built
+  on top of Java and compiles down to Jave bytecode so anywhere you can
+  run Java you can run a Clojure application. 
+
 
 * Why Clojure?
 
   * Immutability
   * Rich data structures
   * Functional
+    - High order functions, first class functions, pure functions vs instructions
   * Simplicity
+    - Limited syntax, loosely typed, handles incidental complexity for
+      you like thread-safety
   * Expressive
+    - You can perform complex data manipulations and actions succsintly
   * Practical
+    - Baked-in Java interop allows interactive with all of the Java ecosystem
 
 * Functional vs Imperative (OOP)
 
   * Computationally Equivalent
-  * OOP executes complex tasks that modify application state
+    - Both are capable of expressing any computational task
+  * OOP executes complex tasks that sequentially modify application
+    state to it's desired result
   * Functional programming achieves the same goal through nested function
     composition. 
   * OOP uses objects as data, mutable variables, methods on objects,
